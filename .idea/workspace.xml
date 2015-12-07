@@ -1,51 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff8e3371-2368-4338-842d-ff8d6d87b9a7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/Step1InitToken.class" afterPath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/Step1InitToken.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/core/OneDrive.class" afterPath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/core/OneDrive.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/core/OneDriveAPI.class" afterPath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/core/OneDriveAPI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/core/OneDriveCore$1.class" afterPath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/core/OneDriveCore$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/core/OneDriveCore.class" afterPath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/core/OneDriveCore.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/core/Principal.class" afterPath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/core/Principal.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/enums/FriendlyNamesEnum.class" afterPath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/enums/FriendlyNamesEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/enums/HttpOperationEnum.class" afterPath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/enums/HttpOperationEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/enums/OneDriveEnum.class" afterPath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/enums/OneDriveEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/exception/RestException.class" afterPath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/exception/RestException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/json/Error.class" afterPath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/json/Error.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/json/OAuth20Token.class" afterPath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/json/OAuth20Token.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/json/Principal.class" afterPath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/json/Principal.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/json/Quota.class" afterPath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/json/Quota.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/json/SharedLink.class" afterPath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/json/SharedLink.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/json/User.class" afterPath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/json/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/json/folder/Data.class" afterPath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/json/folder/Data.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/json/folder/File.class" afterPath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/json/folder/File.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/json/folder/Folder.class" afterPath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/json/folder/Folder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/json/folder/From.class" afterPath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/json/folder/From.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/json/folder/MusicFileImages.class" afterPath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/json/folder/MusicFileImages.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/json/folder/PhotoLocation.class" afterPath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/json/folder/PhotoLocation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/json/folder/SharedWith.class" afterPath="$PROJECT_DIR$/../OneDriveAPI-master/target/classes/net/tjeerd/onedrive/json/folder/SharedWith.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OneDriveAPI-master/target/test-classes/net/tjeerd/onedrive/OneDriveTest.class" afterPath="$PROJECT_DIR$/../OneDriveAPI-master/target/test-classes/net/tjeerd/onedrive/OneDriveTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../invoiceimporter/target/classes/gmail/GMailConnector.class" afterPath="$PROJECT_DIR$/../invoiceimporter/target/classes/gmail/GMailConnector.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../invoiceimporter/target/classes/importer/Importer.class" afterPath="$PROJECT_DIR$/../invoiceimporter/target/classes/importer/Importer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../invoiceimporter/target/classes/model/OneDriveFile.class" afterPath="$PROJECT_DIR$/../invoiceimporter/target/classes/model/OneDriveFile.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../invoiceimporter/target/classes/onedriveuploader/OneDriveConnector.class" afterPath="$PROJECT_DIR$/../invoiceimporter/target/classes/onedriveuploader/OneDriveConnector.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../invoiceimporter/target/classes/onedriveuploader/model/MyPath.class" afterPath="$PROJECT_DIR$/../invoiceimporter/target/classes/onedriveuploader/model/MyPath.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OneDriveAPI-master/OneDriveAPI.iml" afterPath="$PROJECT_DIR$/../OneDriveAPI-master/OneDriveAPI.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OneDriveAPI-master/src/main/main.iml" afterPath="$PROJECT_DIR$/../OneDriveAPI-master/src/main/main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OneDriveAPI-master/src/test/test.iml" afterPath="$PROJECT_DIR$/../OneDriveAPI-master/src/test/test.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../invoiceimporter/invoiceimporter.iml" afterPath="$PROJECT_DIR$/../invoiceimporter/invoiceimporter.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../invoiceimporter/pom.xml" afterPath="$PROJECT_DIR$/../invoiceimporter/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../invoiceimporter/src/main/java/gmail/GMailConnector.java" afterPath="$PROJECT_DIR$/../invoiceimporter/src/main/java/gmail/GMailConnector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../invoiceimporter/src/main/java/importer/Importer.java" afterPath="$PROJECT_DIR$/../invoiceimporter/src/main/java/importer/Importer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../invoiceimporter/src/main/java/model/OneDriveFile.java" afterPath="$PROJECT_DIR$/../invoiceimporter/src/main/java/model/OneDriveFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../invoiceimporter/src/main/java/onedriveuploader/OneDriveConnector.java" afterPath="$PROJECT_DIR$/../invoiceimporter/src/main/java/onedriveuploader/OneDriveConnector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../invoiceimporter/src/main/java/onedriveuploader/model/MyPath.java" afterPath="$PROJECT_DIR$/../invoiceimporter/src/main/java/onedriveuploader/model/MyPath.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../invoiceimporter/src/main/resources/onedrive.properties" afterPath="$PROJECT_DIR$/../invoiceimporter/src/main/resources/onedrive.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../invoiceimporter/target/classes/onedrive.properties" afterPath="$PROJECT_DIR$/../invoiceimporter/target/classes/onedrive.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../myhealth/myhealth.iml" afterPath="$PROJECT_DIR$/../myhealth/myhealth.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../myhealth/pom.xml" afterPath="$PROJECT_DIR$/../myhealth/pom.xml" />
-    </list>
+    <list default="true" id="ff8e3371-2368-4338-842d-ff8d6d87b9a7" name="Default" comment="" />
     <ignored path="TaskSystem.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/domain/target/" />
@@ -82,7 +38,7 @@
       <file leaf-file-name="Task.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/domain/src/main/java/Domain/Task.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5510204">
+            <state vertical-scroll-proportion="0.5263158">
               <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -891,12 +847,19 @@
       <created>1449475495306</created>
       <option name="number" value="Default" />
       <updated>1449475495306</updated>
-      <workItem from="1449475496457" duration="4594000" />
+      <workItem from="1449475496457" duration="4719000" />
     </task>
+    <task id="LOCAL-00001" summary="kjhgkjg">
+      <created>1449483724273</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1449483724273</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4594000" />
+    <option name="totallyTimeSpent" value="4719000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="829" extended-state="0" />
@@ -904,13 +867,14 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26594302" sideWeight="0.5028612" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2971506" sideWeight="0.49713877" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2971506" sideWeight="0.49713877" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26594302" sideWeight="0.49713877" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26594302" sideWeight="0.49713877" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -931,6 +895,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="kjhgkjg" />
+    <option name="LAST_COMMIT_MESSAGE" value="kjhgkjg" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1033,7 +1001,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/domain/src/main/java/Domain/Task.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5510204">
+        <state vertical-scroll-proportion="0.5263158">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
