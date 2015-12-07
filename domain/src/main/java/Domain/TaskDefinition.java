@@ -9,7 +9,7 @@ import javax.persistence.Id;
  */
 
 @Entity
-public class TaskDefintion {
+public class TaskDefinition {
 
     @Id
     @GeneratedValue
@@ -17,7 +17,7 @@ public class TaskDefintion {
 
     private String number;
 
-    public TaskDefintion(String number) {
+    public TaskDefinition(String number) {
         this.number = number;
     }
 
