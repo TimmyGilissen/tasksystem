@@ -27,11 +27,11 @@ public class Task {
 
     private TaskDefinition definition;
 
-    private User executor;
+    private String executor;
 
     private Priority priority;
 
-    public Task(String guid, Status status, TaskDefinition definition, User executor, Priority priority) {
+    public Task(String guid, Status status, TaskDefinition definition, String executor, Priority priority) {
         this.guid = guid;
         this.status = status;
         this.definition = definition;
@@ -51,7 +51,7 @@ public class Task {
         return definition;
     }
 
-    public User getExecutor() {
+    public String getExecutor() {
         return executor;
     }
 
@@ -59,19 +59,25 @@ public class Task {
         return priority;
     }
 
-    public void CloseTask(){
-        if(taskIsOpen())
-            status = statusRepository.getStatusBasedOnName(EnumTaskStatus.CLOSED.toString());
+    public void CloseTask(String executor){
+
+        if(taskIsClosed()) return;
+
+        this.executor = executor;
+        status = statusRepository.getStatusBasedOnName(EnumTaskStatus.CLOSED.toString());
     }
 
     public void StartTask(String executor){
-        if(taskIsOpen())
-            status = statusRepository.getStatusBasedOnName(EnumTaskStatus.RUNNING.toString());
+
+        if(taskIsClosed()) return;
+
+        this.executor = executor;
+        status = statusRepository.getStatusBasedOnName(EnumTaskStatus.RUNNING.toString());
     }
 
 
-    private boolean taskIsOpen() {
-        return !status.getName().equals(EnumTaskStatus.CLOSED.toString());
+    private boolean taskIsClosed() {
+        return status.getName().equals(EnumTaskStatus.CLOSED.toString());
     }
 
 
