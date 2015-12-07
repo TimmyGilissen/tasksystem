@@ -15,7 +15,7 @@ import javax.persistence.Id;
 public class Task {
 
     @Autowired
-    private StatusRepository statusRepository;
+    private StatusRepository StatusRepository;
 
     @Id
     @GeneratedValue
@@ -64,7 +64,7 @@ public class Task {
         if(taskIsClosed()) return;
 
         this.executor = executor;
-        status = statusRepository.getStatusBasedOnName(EnumTaskStatus.CLOSED.toString());
+        status = StatusRepository.getStatusBasedOnName(EnumTaskStatus.CLOSED.toString());
     }
 
     public void StartTask(String executor){
@@ -72,7 +72,7 @@ public class Task {
         if(taskIsClosed()) return;
 
         this.executor = executor;
-        status = statusRepository.getStatusBasedOnName(EnumTaskStatus.RUNNING.toString());
+        status = StatusRepository.getStatusBasedOnName(EnumTaskStatus.RUNNING.toString());
     }
 
 
