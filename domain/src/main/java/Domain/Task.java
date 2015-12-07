@@ -1,7 +1,6 @@
 package Domain;
 
 import Domain.contract.StatusRepository;
-import enums.EnumTaskStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.Entity;
