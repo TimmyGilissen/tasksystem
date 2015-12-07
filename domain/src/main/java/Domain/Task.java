@@ -75,7 +75,6 @@ public class Task {
         status = StatusRepository.getStatusBasedOnName(EnumTaskStatus.RUNNING.toString());
     }
 
-
     private boolean taskIsClosed() {
         return status.getName().equals(EnumTaskStatus.CLOSED.toString());
     }
