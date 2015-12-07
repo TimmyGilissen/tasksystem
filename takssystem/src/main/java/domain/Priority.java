@@ -1,4 +1,4 @@
-package Domain;
+package domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,8 +7,9 @@ import javax.persistence.Id;
 /**
  * Created by timmygilissen on 7/12/15.
  */
+
 @Entity
-public class Status {
+public class Priority {
 
     @Id
     @GeneratedValue
@@ -16,15 +17,22 @@ public class Status {
 
     private String name;
 
-    public Status(String name) {
+    private int orderValue;
+
+    public Priority(String name, int orderValue) {
         this.name = name;
+        this.orderValue = orderValue;
+    }
+
+    public Long getId() {
+        return id;
     }
 
     public String getName() {
         return name;
     }
 
-    public Long getId() {
-        return id;
+    public int getOrderValue() {
+        return orderValue;
     }
 }

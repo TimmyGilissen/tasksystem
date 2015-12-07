@@ -1,8 +1,8 @@
-package Domain;
+package domain;
 
-import Domain.contract.StatusRepository;
+import domain.enums.EnumTaskStatus;
+
 import org.springframework.beans.factory.annotation.Autowired;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -12,9 +12,6 @@ import javax.persistence.Id;
  */
 @Entity
 public class Task {
-
-    @Autowired
-    private StatusRepository StatusRepository;
 
     @Id
     @GeneratedValue
@@ -58,20 +55,20 @@ public class Task {
         return priority;
     }
 
-    public void CloseTask(String executor){
+    public void CloseTask(Status status,String executor){
 
         if(taskIsClosed()) return;
 
         this.executor = executor;
-        status = StatusRepository.getStatusBasedOnName(EnumTaskStatus.CLOSED.toString());
+        this.status = status;
     }
 
-    public void StartTask(String executor){
+    public void StartTask(Status status,String executor){
 
         if(taskIsClosed()) return;
 
         this.executor = executor;
-        status = StatusRepository.getStatusBasedOnName(EnumTaskStatus.RUNNING.toString());
+        this.status = status;
     }
 
     private boolean taskIsClosed() {

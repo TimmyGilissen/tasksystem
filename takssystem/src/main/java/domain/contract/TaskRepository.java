@@ -1,6 +1,6 @@
-package Domain.contract;
+package domain.contract;
 
-import Domain.Task;
+import domain.Task;
 
 /**
  * Created by timmygilissen on 7/12/15.

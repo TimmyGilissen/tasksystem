@@ -1,6 +1,6 @@
-package Domain.contract;
+package domain.contract;
 
-import Domain.Status;
+import domain.Status;
 
 /**
  * Created by timmygilissen on 7/12/15.

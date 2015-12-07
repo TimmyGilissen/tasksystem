@@ -1,7 +1,7 @@
 package repository;
 
-import Domain.Status;
-import Domain.contract.StatusRepository;
+import domain.Status;
+import domain.contract.StatusRepository;
 
 /**
  * Created by timmygilissen on 7/12/15.
