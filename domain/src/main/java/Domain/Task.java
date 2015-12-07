@@ -61,10 +61,18 @@ public class Task {
 
     public void CloseTask(){
         if(taskIsOpen())
-        status = statusRepository.getStatusBasedOnName(EnumTaskStatus.CLOSED.toString());
+            status = statusRepository.getStatusBasedOnName(EnumTaskStatus.CLOSED.toString());
     }
+
+    public void StartTask(String executor){
+        if(taskIsOpen())
+            status = statusRepository.getStatusBasedOnName(EnumTaskStatus.RUNNING.toString());
+    }
+
 
     private boolean taskIsOpen() {
         return !status.getName().equals(EnumTaskStatus.CLOSED.toString());
     }
+
+
 }
