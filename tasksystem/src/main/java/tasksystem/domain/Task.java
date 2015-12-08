@@ -1,8 +1,7 @@
-package domain;
+package tasksystem.domain;
 
-import domain.enums.EnumTaskStatus;
+import tasksystem.domain.enums.EnumTaskStatus;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;

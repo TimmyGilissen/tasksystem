@@ -1,4 +1,4 @@
-package domain;
+package tasksystem.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,21 +7,22 @@ import javax.persistence.Id;
 /**
  * Created by timmygilissen on 7/12/15.
  */
+
 @Entity
-public class Status {
+public class TaskDefinition {
 
     @Id
     @GeneratedValue
     private Long id;
 
-    private String name;
+    private String number;
 
-    public Status(String name) {
-        this.name = name;
+    public TaskDefinition(String number) {
+        this.number = number;
     }
 
-    public String getName() {
-        return name;
+    public String getNumber() {
+        return number;
     }
 
     public Long getId() {
