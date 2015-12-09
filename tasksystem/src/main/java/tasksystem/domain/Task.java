@@ -18,7 +18,7 @@ public class Task {
 
     private String guid;
 
-    private Status status;
+    private EnumTaskStatus status;
 
     private TaskDefinition definition;
 
@@ -26,7 +26,7 @@ public class Task {
 
     private Priority priority;
 
-    public Task(String guid, Status status, TaskDefinition definition, String executor, Priority priority) {
+    public Task(String guid, EnumTaskStatus status, TaskDefinition definition, String executor, Priority priority) {
         this.guid = guid;
         this.status = status;
         this.definition = definition;
@@ -38,7 +38,7 @@ public class Task {
         return guid;
     }
 
-    public Status getStatus() {
+    public EnumTaskStatus getStatus() {
         return status;
     }
 
@@ -54,24 +54,24 @@ public class Task {
         return priority;
     }
 
-    public void CloseTask(Status status,String executor){
+    public void CloseTask(String executor){
 
         if(taskIsClosed()) return;
 
         this.executor = executor;
-        this.status = status;
+        this.status = EnumTaskStatus.CLOSED;
     }
 
-    public void StartTask(Status status,String executor){
+    public void StartTask(String executor){
 
         if(taskIsClosed()) return;
 
         this.executor = executor;
-        this.status = status;
+        this.status = EnumTaskStatus.RUNNING;
     }
 
     private boolean taskIsClosed() {
-        return status.getName().equals(EnumTaskStatus.CLOSED.toString());
+        return status.equals(EnumTaskStatus.CLOSED);
     }
 
 
