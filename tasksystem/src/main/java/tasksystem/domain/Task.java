@@ -1,5 +1,6 @@
 package tasksystem.domain;
 
+import org.joda.time.DateTime;
 import tasksystem.domain.enums.EnumTaskStatus;
 
 import javax.persistence.Entity;
@@ -22,16 +23,25 @@ public class Task {
 
     private TaskDefinition definition;
 
+    private DateTime calculatedEndDate;
+
+    private DateTime creationDate;
+
+    private DateTime modificationDate;
+
+    private DateTime startDate;
+
     private String executor;
 
-    private Priority priority;
-
-    public Task(String guid, EnumTaskStatus status, TaskDefinition definition, String executor, Priority priority) {
+    public Task(String guid, EnumTaskStatus status, TaskDefinition definition, DateTime calculatedEndDate, DateTime creationDate, DateTime modificationDate, DateTime startDate, String executor) {
         this.guid = guid;
         this.status = status;
         this.definition = definition;
+        this.calculatedEndDate = calculatedEndDate;
+        this.creationDate = creationDate;
+        this.modificationDate = modificationDate;
+        this.startDate = startDate;
         this.executor = executor;
-        this.priority = priority;
     }
 
     public String getGuid() {
@@ -50,11 +60,7 @@ public class Task {
         return executor;
     }
 
-    public Priority getPriority() {
-        return priority;
-    }
-
-    public void CloseTask(String executor){
+    public void close(String executor){
 
         if(taskIsClosed()) return;
 
@@ -75,4 +81,19 @@ public class Task {
     }
 
 
+    public DateTime getCalculatedEndDate() {
+        return calculatedEndDate;
+    }
+
+    public DateTime getCreationDate() {
+        return creationDate;
+    }
+
+    public DateTime getModificationDate() {
+        return modificationDate;
+    }
+
+    public DateTime getStartDate() {
+        return startDate;
+    }
 }

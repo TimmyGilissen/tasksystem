@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import tasksystem.application.CloseTaskHandler;
 import tasksystem.commands.CloseTaskCommand;
 import tasksystem.domain.Task;
-import tasksystem.domain.enums.EnumTaskStatus;
 import tasksystem.repository.TaskRepository;
 
 /**
@@ -19,7 +18,7 @@ public class CloseTaskHandlerHandler implements CloseTaskHandler {
 
         Task task = taskRepository.getTaskById(closeTaskCommand.TaskId);
 
-        task.CloseTask(closeTaskCommand.Executor);
+        task.close(closeTaskCommand.Executor);
 
         taskRepository.save(task);
     }
