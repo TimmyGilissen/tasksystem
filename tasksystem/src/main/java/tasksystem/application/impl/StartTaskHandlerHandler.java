@@ -18,7 +18,7 @@ public class StartTaskHandlerHandler implements StartTaskHandler {
     public void StartTask(StartTaskCommand startTaskCommand) {
         Task task = taskRepository.getTaskById(startTaskCommand.taskId);
 
-        task.StartTask(startTaskCommand.executor);
+        task.start(startTaskCommand.executor);
 
         taskRepository.save(task);
     }
