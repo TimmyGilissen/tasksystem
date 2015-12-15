@@ -1,4 +1,4 @@
-package tasksystem.commands;
+package tasksystem.application.commands;
 
 /**
  * Created by timmygilissen on 7/12/15.

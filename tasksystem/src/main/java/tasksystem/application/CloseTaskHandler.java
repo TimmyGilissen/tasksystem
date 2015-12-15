@@ -1,10 +1,10 @@
 package tasksystem.application;
 
 import org.springframework.stereotype.Component;
-import tasksystem.commands.CloseTaskCommand;
+import tasksystem.application.commands.CloseTaskCommand;
 
 @Component
 public interface CloseTaskHandler {
 
-    void CloseTask(CloseTaskCommand closeTaskCommand);
+    void closeTask(CloseTaskCommand closeTaskCommand);
 }

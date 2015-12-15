@@ -1,4 +1,4 @@
-package tasksystem.domain.enums;
+package tasksystem.domain;
 
 /**
  * Created by timmygilissen on 7/12/15.

@@ -1,7 +1,6 @@
 package tasksystem.domain;
 
 import org.joda.time.DateTime;
-import tasksystem.domain.enums.EnumTaskStatus;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

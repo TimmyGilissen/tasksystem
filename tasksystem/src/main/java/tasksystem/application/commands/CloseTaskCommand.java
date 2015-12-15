@@ -1,4 +1,4 @@
-package tasksystem.commands;
+package tasksystem.application.commands;
 
 
 public class CloseTaskCommand {

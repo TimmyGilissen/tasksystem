@@ -1,22 +1,21 @@
 package tasksystem.application.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import tasksystem.application.StartTaskHandler;
-import tasksystem.commands.StartTaskCommand;
+import tasksystem.application.commands.StartTaskCommand;
 import tasksystem.domain.Task;
-import tasksystem.repository.TaskRepository;
+import tasksystem.domain.repository.TaskRepository;
 
-/**
- * Created by timmygilissen on 9/12/15.
- */
+@Component
 public class StartTaskHandlerHandler implements StartTaskHandler {
 
     @Autowired
     private TaskRepository taskRepository;
 
     @Override
-    public void StartTask(StartTaskCommand startTaskCommand) {
-        Task task = taskRepository.getTaskById(startTaskCommand.taskId);
+    public void startTask(StartTaskCommand startTaskCommand) {
+        Task task = taskRepository.getTask(startTaskCommand.taskId);
 
         task.start(startTaskCommand.executor);
 
