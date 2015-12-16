@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id='CommandUitgevoerd' xmlns='' xmlns:xs='http://www.w3.org/2001/XMLSchema'>  
+
+  <xs:element name='CommandUitgevoerdEvent'>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="MessageCorrelationId" type="xs:string" />
+        <xs:choice>
+          <xs:element name='Afgewerkt' type='xs:boolean' />
+          <xs:element name='Gefaald' type='xs:boolean' />
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

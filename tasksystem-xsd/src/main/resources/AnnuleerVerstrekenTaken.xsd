@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<xs:schema id='AnnuleerVerstrekenTaken' xmlns='' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+  <xs:element name='AnnuleerVerstrekenTakenBericht'>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Uitvoerder" type="xs:string" minOccurs="1" />
+        <xs:element name="Commentaar" type="xs:string" minOccurs="1" />
+        <xs:element name="VervalDatum" type="xs:date" minOccurs="1" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

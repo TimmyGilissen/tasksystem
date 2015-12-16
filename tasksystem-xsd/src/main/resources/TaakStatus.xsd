@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xs:schema id='TaakStatus' xmlns='' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+	<xs:include schemaLocation="Global.xsd"/>
+
+	<xs:element name='TaakStatusBericht'>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="MessageCorrelationId" type="xs:string" minOccurs="0" />
+				<xs:element name='Taken' type='TaakStatus' minOccurs='1' maxOccurs='unbounded' />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name='TaakStatus'>
+		<xs:sequence>
+			<xs:element name='TaakCorrelationId' type='xs:string' minOccurs='1' />
+			<xs:choice>
+				<xs:element name='Afgewerkt' type='Afgewerkt' />
+				<xs:element name='Gefaald' type='StatusError' />
+				<xs:element name='Opgenomen' type='Opgenomen' />				
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name='StatusError'>
+		<xs:sequence>      
+			<xs:element name='OngeldigTaakCorrelationID' type='xs:string' />
+			<xs:element name='OngeldigProcesType' type='xs:string' />
+			<xs:element name='OngeldigKantoorNummer' type='xs:string' />
+			<xs:element name='OngeldigTaakType' type='xs:string' />
+			<xs:element name='OngeldigOpgenomenDoor' type='xs:string' />
+			<xs:element name='OngeldigGewensteGebruiker' type='xs:string' />
+			<xs:element name='OngeldigRol' type='xs:string' />
+			<xs:element name='OngeldigPrioriteit' type='xs:string' />
+			<xs:element name='OngeldigVaardigheden' type='LijstVanOngeldigVaardigheden'  />
+			<xs:element name='OngeldigeCombinatieKantoorNummerOpgenomenDoor' type='FoutieveCombinatie' />
+			<xs:element name='OngeldigeCombinatieKantoorNummerGewensteGebruiker' type='FoutieveCombinatie' />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name='Opgenomen'>
+		<xs:sequence>
+			<xs:element name='OpgenomenDoor' type='xs:string' />
+			<xs:element name='Datum' type='xs:date' />
+		</xs:sequence>
+	</xs:complexType>
+
+	<!--xs:complexType name='KantoorOvername'-->
+	<!--	<xs:sequence-->
+	<!--		<xs:element name='Datum' type='xs:date' /-->
+	<!--	</xs:sequence-->
+	<!--</xs:complexType-->
+
+	<xs:complexType name='Afgewerkt'>
+		<xs:sequence>
+			<xs:element name='Resultaat' type='Resultaat' />
+			<xs:element name='Datum' type='xs:date' />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name='LijstVanOngeldigVaardigheden'>
+		<xs:sequence>
+			<xs:sequence minOccurs='0' maxOccurs='unbounded'>
+				<xs:element name='OngeldigVaardigheid' type='xs:string' />
+			</xs:sequence>
+		</xs:sequence>
+	</xs:complexType>	
+
+	<xs:complexType name='OngeldigVaardigheid'>
+		<xs:sequence>
+			<xs:element name='OngeldigVaardigheid' type='xs:string' />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name='FoutieveCombinatie'>
+		<xs:sequence>
+			<xs:element name='Kantoor' type='xs:string' />
+			<xs:element name='User' type='xs:string' />
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>

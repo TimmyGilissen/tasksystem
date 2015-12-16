@@ -1,0 +1,104 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<xs:schema id='TaakAanmaken' xmlns='' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+  <xs:include schemaLocation="Global.xsd"/>
+  <!-- Lijst van Taken -->
+  <xs:element name='TaakAanmakenBericht'>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="MessageCorrelationId" type="xs:string" minOccurs="0" />
+        <xs:element name='Taken' type='LijstVanTaken' minOccurs='1' maxOccurs='1' />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name='LijstVanTaken'>
+    <xs:sequence>
+      <xs:sequence minOccurs='1' maxOccurs='unbounded'>
+        <xs:element name='Taak' type='TaakAanmaken' />
+      </xs:sequence>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name='LijstKeyValue'>
+    <xs:sequence>
+      <xs:sequence>
+        <xs:element name='KeyValue' type='KeyValue' minOccurs='0' maxOccurs='unbounded' />
+      </xs:sequence>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name='TaakAanmaken'>
+    <xs:sequence>
+      <xs:element name='TaakType' type='xs:string' />
+
+      <xs:element name='CorrelationId' type='xs:string'/>
+
+      <xs:choice minOccurs="0">
+        <xs:element name='OpgenomenDoor' type='xs:string' />
+        <xs:element name='AanbevolenGebruiker' type='xs:string' />
+      </xs:choice>
+
+      <xs:element name='VereisteRol' type='xs:string' minOccurs="0" />
+
+      <xs:element name='UitvoerendKantoor' type='UitvoerendKantoor' minOccurs="0" />
+
+      <xs:sequence>
+        <xs:element name='VereisteVaardigheden' type='LijstVanVaardigheden' minOccurs="0" />
+      </xs:sequence>
+
+      <xs:element name='SLA' type='xs:int' minOccurs="0" />
+      <xs:element name='Einddatum' type='xs:dateTime' minOccurs="0" />
+
+      <xs:element name='Prioriteit' minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name='Value' type='Priority' />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name='TaakUrl' type='xs:string' />
+
+      <!-- een identiefer waarvoor de taak plaats vind bv dossier of persoon -->
+      <xs:element name='Reference' type='xs:string' />
+      <!-- Extra informatie over de reference -->
+      <xs:element name='ReferenceDescription' type='xs:string' minOccurs='0' />
+
+      <xs:sequence>
+        <xs:element name='TaakInputParameters' type='LijstKeyValue' minOccurs="0" />
+      </xs:sequence>
+      <xs:sequence>
+        <xs:element name='ExterneInputParameters' type='LijstKeyValue' minOccurs="0" />
+      </xs:sequence>
+
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name='Priority' final='restriction' >
+    <xs:restriction base='xs:string'>
+      <xs:enumeration value='Zeer hoog' />
+      <xs:enumeration value= 'Hoog' />
+      <xs:enumeration value= 'Midden'  />
+      <xs:enumeration value= 'Laag'  />
+      <xs:enumeration value= 'Zeer laag'  />
+      <xs:enumeration value='Super Prioriteit' />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name='LijstVanVaardigheden'>
+    <xs:sequence>
+      <xs:sequence minOccurs='0' maxOccurs='unbounded'>
+        <xs:element name='Vaardigheid' type='Vaardigheid' />
+      </xs:sequence>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name='Vaardigheid'>
+    <xs:sequence>
+      <xs:element name='Category' type='xs:string' />
+      <xs:element name='Code' type='xs:string' />
+    </xs:sequence>
+  </xs:complexType>
+
+
+</xs:schema>
