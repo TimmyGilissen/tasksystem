@@ -1,14 +1,14 @@
 package tasksystem.services.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Component;
 import tasksystem.application.CloseTaskHandler;
 import tasksystem.application.StartTaskHandler;
 import tasksystem.application.commands.CloseTaskCommand;
 import tasksystem.application.commands.StartTaskCommand;
 import tasksystem.services.TaskService;
 
-@Controller
+@Component
 public class TaskServiceService implements TaskService {
 
     @Autowired

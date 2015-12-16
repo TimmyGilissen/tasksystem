@@ -21,7 +21,7 @@ public class Task {
 
     private EnumTaskStatus status;
 
-    private TaskDefinition definition;
+    private String definition;
 
     private DateTime calculatedEndDate;
 
@@ -37,7 +37,7 @@ public class Task {
 
     private Role role;
 
-    public Task(String guid, EnumTaskStatus status, TaskDefinition definition, DateTime calculatedEndDate, DateTime creationDate, DateTime modificationDate, DateTime startDate, String executor, List<Skill> skills, Role role) {
+    public Task(String guid, EnumTaskStatus status, String definition, DateTime calculatedEndDate, DateTime creationDate, DateTime modificationDate, DateTime startDate, String executor, List<Skill> skills, Role role) {
         this.guid = guid;
         this.status = status;
         this.definition = definition;
@@ -62,7 +62,7 @@ public class Task {
         return status;
     }
 
-    public TaskDefinition getDefinition() {
+    public String getDefinition() {
         return definition;
     }
 
