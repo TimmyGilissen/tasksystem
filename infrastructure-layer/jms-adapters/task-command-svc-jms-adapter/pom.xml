@@ -62,6 +62,16 @@
             <artifactId>tasksystem-xsd</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>be.gilit</groupId>
+            <artifactId>TaskSystem</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>be.gilit</groupId>
+            <artifactId>common-jms</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>

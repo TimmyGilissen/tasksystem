@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:jms="http://www.springframework.org/schema/jms"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:oxm="http://www.springframework.org/schema/oxm"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
+						http://www.springframework.org/schema/oxm http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd
+						http://www.springframework.org/schema/jms http://www.springframework.org/schema/jms/spring-jms-3.0.xsd">
+
+
+    <jms:listener-container connection-factory="connectionFactory" destination-resolver="destinationResolver" acknowledge="transacted">
+        <jms:listener destination="queues/task/create" ref="taakUpdateRetryMessageListener"/>
+    </jms:listener-container>
+
+    <bean name="destinationResolver" class="org.springframework.jms.support.destination.DynamicDestinationResolver"/>
+
+    <bean id="taakUpdateRetryMessageListener" class="common.jms.RetryMessageListener">
+        <constructor-arg ref="taskFeedbackAdapter"/>
+        <constructor-arg value="3"/>
+        <constructor-arg ref="jmsTaskUpdateErrorQueueTemplate"/>
+        <property name="messageConverter" ref="createMessageConverter"/>
+    </bean>
+
+    <bean id="taskFeedbackAdapter" class="taak.create.TaskCommandAdapter" autowire="constructor">
+    </bean>
+
+    <bean id="createMessageConverter" class="org.springframework.jms.support.converter.MarshallingMessageConverter">
+        <property name="marshaller" ref="taskCreateMarshaller"/>
+        <property name="unmarshaller" ref="taskCreateMarshaller"/>
+        <property name="targetType">
+            <util:constant static-field="org.springframework.jms.support.converter.MessageType.TEXT"/>
+        </property>
+    </bean>
+
+    <oxm:jaxb2-marshaller id="taskCreateMarshaller">
+        <oxm:class-to-be-bound name="be.gilit.task.create.adapter.jms.v1.TaakAanmakenBericht"/>
+    </oxm:jaxb2-marshaller>
+
+    <bean id="jmsTaskUpdateErrorQueueTemplate" class="org.springframework.jms.core.JmsTemplate">
+        <property name="connectionFactory" ref="connectionFactory"/>
+        <property name="defaultDestinationName" value="queues/task/error"/>
+        <property name="destinationResolver" ref="destinationResolver"/>
+    </bean>
+
+</beans>
