@@ -1,4 +1,4 @@
-package tasksystem.services;
+package tasksystem.application.services;
 
 import org.springframework.stereotype.Service;
 import tasksystem.application.commands.CloseTaskCommand;

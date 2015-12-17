@@ -1,4 +1,4 @@
-package tasksystem.application;
+package tasksystem.application.handlers;
 
 import org.springframework.stereotype.Component;
 import tasksystem.application.commands.StartTaskCommand;

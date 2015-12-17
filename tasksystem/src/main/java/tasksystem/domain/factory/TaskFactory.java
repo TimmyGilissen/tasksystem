@@ -1,4 +1,4 @@
-package tasksystem.factory;
+package tasksystem.domain.factory;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -14,7 +14,7 @@ public class TaskFactory {
 
     public Task create(CreateTaskCommand createTaskCommand){
 
-        if(!taskRepository.taskExists(createTaskCommand.Guid)) return null;
+        if(!taskRepository.taskExists(createTaskCommand.guid)) return null;
 
 
 

@@ -1,8 +1,8 @@
-package tasksystem.application.impl;
+package tasksystem.application.handlers.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import tasksystem.application.StartTaskHandler;
+import tasksystem.application.handlers.StartTaskHandler;
 import tasksystem.application.commands.StartTaskCommand;
 import tasksystem.domain.Task;
 import tasksystem.domain.repository.TaskRepository;
