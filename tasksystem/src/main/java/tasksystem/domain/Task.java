@@ -1,10 +1,9 @@
 package tasksystem.domain;
 
-import org.joda.time.DateTime;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
@@ -20,21 +19,21 @@ public class Task {
 
     private String definition;
 
-    private DateTime calculatedEndDate;
+    private LocalDateTime calculatedEndDate;
 
-    private DateTime creationDate;
+    private LocalDateTime creationDate;
 
-    private DateTime modificationDate;
+    private LocalDateTime modificationDate;
 
-    private DateTime startDate;
+    private LocalDateTime startDate;
 
     private String executor;
 
     private List<Skill> skills;
 
-    private Role role;
+    private String role;
 
-    public Task(String guid, EnumTaskStatus status, String definition, DateTime calculatedEndDate, DateTime creationDate, DateTime modificationDate, DateTime startDate, String executor, List<Skill> skills, Role role) {
+    public Task(String guid, EnumTaskStatus status, String definition, LocalDateTime calculatedEndDate, LocalDateTime creationDate, LocalDateTime modificationDate, LocalDateTime startDate, String executor, List<Skill> skills, String role) {
         this.guid = guid;
         this.status = status;
         this.definition = definition;
@@ -87,19 +86,19 @@ public class Task {
         return status.equals(EnumTaskStatus.CLOSED);
     }
 
-    public DateTime getCalculatedEndDate() {
+    public LocalDateTime getCalculatedEndDate() {
         return calculatedEndDate;
     }
 
-    public DateTime getCreationDate() {
+    public LocalDateTime getCreationDate() {
         return creationDate;
     }
 
-    public DateTime getModificationDate() {
+    public LocalDateTime getModificationDate() {
         return modificationDate;
     }
 
-    public DateTime getStartDate() {
+    public LocalDateTime getStartDate() {
         return startDate;
     }
 
@@ -107,7 +106,7 @@ public class Task {
         return skills;
     }
 
-    public Role getRole() {
+    public String getRole() {
         return role;
     }
 }

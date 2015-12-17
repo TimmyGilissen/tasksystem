@@ -8,13 +8,13 @@ import java.util.List;
 public class CreateTaskCommand {
     public final String guid;
 
-    private final String definition;
+    public final String definition;
 
-    private final String executor;
+    public final String executor;
 
-    private final String role;
+    public final String role;
 
-    private final List<SkillDTO> vaardigheden;
+    public final List<SkillDTO> vaardigheden;
 
     private CreateTaskCommand(Builder builder) {
         guid = builder.guid;

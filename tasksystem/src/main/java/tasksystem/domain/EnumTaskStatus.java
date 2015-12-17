@@ -5,5 +5,5 @@ package tasksystem.domain;
  */
 public enum EnumTaskStatus {
     CLOSED,
-    RUNNING
+    CREATED, RUNNING
 }
