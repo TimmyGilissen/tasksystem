@@ -8,8 +8,11 @@
     <artifactId>tasksystem-queue-adapter</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+
     <properties>
         <org.springframework.version>4.2.3.RELEASE</org.springframework.version>
+        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.compiler.source>1.7</maven.compiler.source>
     </properties>
 
     <dependencies>
