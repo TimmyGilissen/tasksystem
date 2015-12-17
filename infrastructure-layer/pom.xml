@@ -5,9 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>be.gilit</groupId>
-    <artifactId>tasksystem-queue-adapter</artifactId>
+    <artifactId>infrastructure-layer</artifactId>
     <version>1.0-SNAPSHOT</version>
-
 
 
 </project>
