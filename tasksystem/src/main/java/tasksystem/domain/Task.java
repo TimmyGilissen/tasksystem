@@ -7,9 +7,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.util.List;
 
-/**
- * Created by timmygilissen on 7/12/15.
- */
 @Entity
 public class Task {
 
