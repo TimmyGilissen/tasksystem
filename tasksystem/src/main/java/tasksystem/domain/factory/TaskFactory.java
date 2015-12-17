@@ -16,9 +16,6 @@ public class TaskFactory {
 
         if(!taskRepository.taskExists(createTaskCommand.guid)) return null;
 
-
-
-
         return new Task();
     }
 }
